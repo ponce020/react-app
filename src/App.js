@@ -1,15 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Feed from "./Feed";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Widget from "./Widgets";
+import Login from './Login';
+import { useStateValue } from "./StateProvider";
 
 function App() {
+  //const user = null;
+  const [{user}, dispatch] = useStateValue();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      {!user ? (
+        <Login/>
+      ) : (
+        <>
+          <Header />
+
+          <div className="app__body">
+            <Sidebar />
+            <Feed />
+            <Widget />
+          </div>
+        </>
+      )}
     </div>
   );
 }
