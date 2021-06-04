@@ -20,13 +20,13 @@ function Sidebar() {
             <SidebarRow
             src={user.photoURL}
             title={user.displayName}  />
-            <SidebarRow Icon={LocalHospitalIcon} title='Healt'/>
-            <SidebarRow Icon={EmojiFlagsIcon} title='Personal'/>
-            <SidebarRow Icon={ChatIcon} title='Recursos'/>
-            <SidebarRow Icon={StorefrontIcon} title='Contabilidad'/>
-            <SidebarRow Icon={PeopleIcon} title='Healt'/>
-            <SidebarRow Icon={VideoLibraryIcon} title='Personal'/>
-            <SidebarRow Icon={ExpandMoreOutlined} title='Recursos'/>
+            <SidebarRow Icon={LocalHospitalIcon} title='Salud'/>
+            <SidebarRow Icon={EmojiFlagsIcon} title='Bandera'/>
+            <SidebarRow Icon={ChatIcon} title='Mensaje'/>
+            <SidebarRow Icon={StorefrontIcon} title='Tienda'/>
+            <SidebarRow Icon={PeopleIcon} title='Persona'/>
+            <SidebarRow Icon={VideoLibraryIcon} title='Video'/>
+            <SidebarRow Icon={ExpandMoreOutlined} title='Flechita'/>
 
         </div>
     )
